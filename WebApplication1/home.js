@@ -1,11 +1,12 @@
 ﻿function changeText(item) {
-    alert('test');
     $.ajax({
         type: "POST",
-        url: 'home/changetext',
+        url: 'word/changetext',
         dataType: "text",
         success: function (result) {
             $("#replaceText").html(result);
+            $("#replaceText").css("font-size", "25px");
+            $("#replaceText").css("color", "red");
         }
     })
 }

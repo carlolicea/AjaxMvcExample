@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace WebApplication1.Controllers
 {
-    public class HomeController : Controller
+    public class WordController : Controller
     {
         [HttpGet]
         public ActionResult Home()
@@ -22,7 +22,6 @@ namespace WebApplication1.Controllers
         }
                 
         [HttpPost]
-        [Route("home/changetext")]
         public ActionResult ChangeText()
         {
             string returnstring = "This has been changed";
